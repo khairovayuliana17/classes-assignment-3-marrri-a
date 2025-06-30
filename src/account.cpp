@@ -16,8 +16,8 @@ void BankAccount::setAccountNumber(const std::string& newNumber) {
         return;
     }
 
-    for (char a : newNumber) {
-        if (!isdigit(a)) {
+    for (char c : newNumber) {
+        if (!isdigit(c)) {
             std::cout << "Ошибка: номер счета должен содержать 16 цифр!" << std::endl;
             return;
         }
